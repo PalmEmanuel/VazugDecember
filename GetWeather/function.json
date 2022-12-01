@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "vazugtimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "*/5 * * * * *"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "myQueue",
+      "queueName": "weather",
+      "dataType": "string"
+    }
+  ]
+}

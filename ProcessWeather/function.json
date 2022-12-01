@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "direction": "in",
+      "name": "weatherInfo",
+      "queueName": "weather",
+      "dataType": "string"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "path": "weather/{name}.txt",
+      "name": "blobBinding"
+    }
+  ]
+}
